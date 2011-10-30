@@ -9,6 +9,6 @@
 (load-library "ido-mode-config")
 (load-library "tramp-config")
 (load-library "color-theme-config")
-
+(load-library "python-config")
 
 (message "* --[ Done with AJW Emacs init file ]--")
