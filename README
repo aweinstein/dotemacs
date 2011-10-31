@@ -1,3 +1,9 @@
-These are my emacs cofiguration files.
+These are my emacs cofiguration files. Nothing really novel to see here.
 
-Nothing really novel to see here.
+Requirements
+------------
+
+Emacs packets that need to be in ~/.emacs.d that are not in this repository:
+
+* zenburn-emacs: https://github.com/bbatsov/zenburn-emacs
+* python-mode: https://launchpad.net/python-mode/
