@@ -16,3 +16,6 @@
 
 ; Enable column numbering
 (column-number-mode 1)
+
+; Enable show parenthesis mode
+(show-paren-mode 1)
