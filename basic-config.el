@@ -13,3 +13,6 @@
 ; Enable Delete Selection mode to replace a region just by typing text, and
 ; kill the selected text just by hitting the Backspace key.
 (delete-selection-mode 1)
+
+; Enable column numbering
+(column-number-mode 1)
