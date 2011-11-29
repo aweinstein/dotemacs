@@ -19,3 +19,9 @@
 
 ; Enable show parenthesis mode
 (show-paren-mode 1)
+
+; Set font size to 8 pts
+(set-face-attribute 'default nil :height 80)
+
+; Set column width to 79 characters
+(setq-default fill-column 79)
