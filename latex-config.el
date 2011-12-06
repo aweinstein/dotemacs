@@ -6,6 +6,7 @@
 (add-hook 'LaTeX-mode-hook 'reftex-mode) ;turn on REFTeX mode by default
 (add-hook 'LaTeX-mode-hook 'flyspell-mode) ;turn on flyspell mode by default
 (setq TeX-save-query nil) ;autosave before compiling
+(add-hook 'LaTeX-mode-hook 'auto-fill-mode)
 
 ; use evince for dvi and pdf viewer
 ; evince-dvi backend should be installed
@@ -25,18 +26,10 @@
 
 ;; (setq reftex-plug-into-AUCTeX t)
 ;; (setq TeX-parse-self t)
-;; (setq-default TeX-master nil)
 ;; (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
-
-
-
-;; (setq TeX-parse-self t)
 ;; (setq-default TeX-master nil)
 ;; ;(add-hook 'LaTeX-mode-hook 'visual-line-mode)
-;; (add-hook 'LaTeX-mode-hook 'auto-fill-mode)
-;; (add-hook 'LaTeX-mode-hook 'flyspell-mode)
-;; (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
-;; (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
-;; (setq reftex-plug-into-AUCTeX t)
+
+
 
 
