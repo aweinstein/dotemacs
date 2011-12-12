@@ -1,7 +1,13 @@
 ;; Basic configuration
 (setq inhibit-startup-message t) ; suppress initial startup message
 (tool-bar-mode -1) ; hide the toolbar
+
+; Scrolling
 (set-scroll-bar-mode 'right) 
+(setq
+  scroll-margin 0                  
+  scroll-conservatively 100000
+  scroll-preserve-screen-position 1)
 
 (setq make-backup-files nil) ; Disable creation of backup files
 
