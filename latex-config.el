@@ -8,6 +8,8 @@
 (setq TeX-save-query nil) ;autosave before compiling
 (add-hook 'LaTeX-mode-hook 'auto-fill-mode)
 
+(setq TeX-parse-self t)
+
 ; use evince for dvi and pdf viewer
 ; evince-dvi backend should be installed
 (setq TeX-view-program-selection
@@ -25,7 +27,7 @@
          ("^html?$" "." "iceweasel %o"))))
 
 ;; (setq reftex-plug-into-AUCTeX t)
-;; (setq TeX-parse-self t)
+
 ;; (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 ;; (setq-default TeX-master nil)
 ;; ;(add-hook 'LaTeX-mode-hook 'visual-line-mode)
