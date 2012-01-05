@@ -31,3 +31,4 @@
 
 ; Set column width to 79 characters
 (setq-default fill-column 79)
+

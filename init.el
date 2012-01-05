@@ -10,5 +10,6 @@
 (load-library "tramp-config")
 (load-library "color-theme-config")
 (load-library "python-config")
+(load-library "cedet-config")
 
 (message "* --[ Done with AJW Emacs init file ]--")

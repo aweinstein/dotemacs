@@ -7,6 +7,7 @@ Emacs packets that need to be in ~/.emacs.d that are not in this repository:
 
 * zenburn-emacs: https://github.com/bbatsov/zenburn-emacs
 * python-mode: https://launchpad.net/python-mode/
+* CEDET: http://alexott.net/en/writings/emacs-devenv/EmacsCedet.html 
    
 Instructions
 ------------
@@ -14,3 +15,4 @@ $ git clone git@github.com:aweinstein/dotemacs.git ~/.emacs.d
 $ cd .emacs.d
 $ bzr branch lp:python-mode
 $ git clone git://github.com/bbatsov/zenburn-emacs.git
+$ bzr checkout bzr://cedet.bzr.sourceforge.net/bzrroot/cedet/code/trunk cedet

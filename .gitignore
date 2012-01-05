@@ -3,3 +3,4 @@ zenburn-emacs
 org-clock-save.el
 python-mode
 tramp
+cedet
