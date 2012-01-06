@@ -8,3 +8,4 @@
   '("\\` " "^\*Mess" "^\*Back" ".*Completion" "^\*Ido" "^\*trace"
 
      "^\*compilation" "^\*GTAGS" "^session\.*" "^\*") )
+(setq ido-enable-tramp-completion nil)
