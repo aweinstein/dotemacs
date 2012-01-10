@@ -1,5 +1,6 @@
 ; Load CEDET
-(load-file "~/.emacs.d/cedet/common/cedet.el")
+;(load-file "~/.emacs.d/cedet/common/cedet.el")
+(load-file "~/.emacs.d/cedet-1.0pre6/common/cedet.el")
 
 ;; For more info see
 ;; https://github.com/alexott/emacs-configs/blob/master/rc/emacs-rc-cedet.el

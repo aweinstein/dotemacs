@@ -4,3 +4,5 @@ org-clock-save.el
 python-mode
 tramp
 cedet
+cedet-1.0pre6
+ecb-2.40

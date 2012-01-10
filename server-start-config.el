@@ -1,3 +1,5 @@
+
+
 ; Start the server
 ;; http://lists.gnu.org/archive/html/help-gnu-emacs/2004-01/msg00869.html
 ;; ** emacsclient
@@ -11,7 +13,8 @@ to emacsclient has failed."
   (if (equal output "t\n")
       (message "Not starting server, one instance already running...")
     (message "Starting server...")
-      (server-start)))
+    (server-start)))
+
 ;;
 (defun my-server-start ()
   "Call `server-start' only if no other accessible Emacs process
@@ -21,4 +24,8 @@ is already acting as a server for client processes."
 "t")
                         'my-server-start-filter-function)))
 ;;
+
 (my-server-start)
+
+(require 'edit-server)
+(edit-server-start)
