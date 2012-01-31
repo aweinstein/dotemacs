@@ -5,3 +5,6 @@
  				   interpreter-mode-alist))
 (autoload 'python-mode "python-mode" "Python editing mode." t)
 (setq py-install-directory "~/.emacs.d/python-mode")
+
+(setq-default indent-tabs-mode nil)    ; use only spaces and no tabs
+(setq default-tab-width 4)
