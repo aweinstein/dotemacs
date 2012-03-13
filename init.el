@@ -14,4 +14,6 @@
 (load-library "ecb-config")
 (load-library "malabar-config")
 
+(require 'pomodoro)
+
 (message "* --[ Done with AJW Emacs init file ]--")
