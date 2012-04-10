@@ -11,7 +11,7 @@
 (load-library "color-theme-config")
 (load-library "python-config")
 (load-library "cedet-config")
-(load-library "ecb-config")
-(load-library "malabar-config")
+;(load-library "ecb-config")
+;(load-library "malabar-config")
 
 (message "* --[ Done with AJW Emacs init file ]--")
