@@ -5,3 +5,6 @@
 ;(add-to-list 'load-path "~/.emacs.d/themes")
 ;(require 'color-theme-zenburn)
 ;(color-theme-zenburn)
+
+; For ReST mode with dark background
+(setq frame-background-mode 'dark)
