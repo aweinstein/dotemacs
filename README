@@ -15,6 +15,11 @@ Instructions
 $ git clone git@github.com:aweinstein/dotemacs.git ~/.emacs.d
 $ cd .emacs.d
 $ bzr branch lp:python-mode
-$ git clone git://github.com/bbatsov/zenburn-emacs.git
+$ git clone git://orgmode.org/org-mode.git ~/.emacs.d/org-mode
+$ cd .emacs.d/org-mode
+$ make
+
+$ git clone git://github.com/bbatsov/zenburn-emacs.git themes
 $ bzr checkout bzr://cedet.bzr.sourceforge.net/bzrroot/cedet/code/trunk cedet
 $ git clone git://github.com/buzztaiki/malabar-mode.git
+build-essential$

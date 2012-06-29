@@ -39,8 +39,8 @@
 
 ; ----------------------------------------
 ; http://www.emacswiki.org/cgi-bin/wiki/EmacsNiftyTricks#toc3
-(defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
-  "Prevent annoying \"Active processes exist\" query when you quit Emacs."
-  (flet ((process-list ())) ad-do-it))
+;; (defadvice save-buffers-kill-emacs (around no-query-kill-emacs activate)
+;;   "Prevent annoying \"Active processes exist\" query when you quit Emacs."
+;;   (flet ((process-list ())) ad-do-it))
 
 (fset 'yes-or-no-p 'y-or-n-p)

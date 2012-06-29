@@ -1,5 +1,5 @@
 ; org-mode
-(setq load-path (cons "~/.emacs.d/org-7.8.03/lisp/" load-path))
+(setq load-path (cons "~/.emacs.d/org-mode/lisp/" load-path))
 (require 'org-install)
 
 ;; flyspell mode for spell checking everywhere
