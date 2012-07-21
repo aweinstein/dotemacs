@@ -44,3 +44,7 @@
 ;;   (flet ((process-list ())) ad-do-it))
 
 (fset 'yes-or-no-p 'y-or-n-p)
+
+; http://emacs-fu.blogspot.com/2008/12/easy-switching-between-visible-buffers.html
+(require 'windmove)
+(windmove-default-keybindings 'super)
