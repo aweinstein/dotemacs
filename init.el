@@ -13,7 +13,7 @@
 ;; (load-library "cedet-config")
 ;(load-library "ecb-config")
 ;(load-library "malabar-config")
-
+(load-library "java-config")
 ;(require 'pomodoro)
 
 (message "* --[ Done with AJW Emacs init file ]--")
