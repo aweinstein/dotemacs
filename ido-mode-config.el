@@ -9,3 +9,6 @@
 
      "^\*compilation" "^\*GTAGS" "^session\.*" "^\*") )
 (setq ido-enable-tramp-completion nil)
+
+; Fix annoying behavior when creating a new file
+(setq ido-auto-merge-work-directories-length -1)
