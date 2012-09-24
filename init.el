@@ -11,9 +11,10 @@
 (load-library "color-theme-config")
 (load-library "python-config")
 (load-library "java-config")
+(load-library "ecb-config")
 
 ;(load-library "cedet-config")
-;(load-library "ecb-config")
+
 ;(load-library "malabar-config")
 ;(require 'pomodoro)
 

@@ -3,10 +3,7 @@ zenburn-emacs
 org-clock-save.el
 python-mode
 tramp
-cedet
-cedet-1.0pre6
-ecb-2.40
-malabar-mode*
+ecb
 org-7.8.03
 org-mode
 themes

@@ -1,2 +1,3 @@
-(add-to-list 'load-path "~/.emacs.d/ecb-2.40")
+(setq stack-trace-on-error t)
+(add-to-list 'load-path "~/.emacs.d/ecb")
 (require 'ecb)
