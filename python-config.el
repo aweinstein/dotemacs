@@ -1,14 +1,41 @@
-;; Python mode
-(add-to-list 'load-path "~/.emacs.d/python-mode")
-(setq auto-mode-alist (cons '("\\.py$" . python-mode) auto-mode-alist))
-(setq interpreter-mode-alist (cons '("python" . python-mode)
- 				   interpreter-mode-alist))
-(autoload 'python-mode "python-mode" "Python editing mode." t)
 (setq py-install-directory "~/.emacs.d/python-mode")
+(add-to-list 'load-path py-install-directory)
+(require 'python-mode)
 
-(setq-default indent-tabs-mode nil)    ; use only spaces and no tabs
-(setq default-tab-width 4)
-(setq py-indent-comments nil)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; From http://www.jesshamrick.com/2012/09/18/emacs-as-a-python-ide/
+; https://raw.github.com/jhamrick/blog/master/emacs-python-tutorial/settings/python-settings.el
+
+; use IPython
+(setq-default py-shell-name "ipython")
+(setq-default py-which-bufname "IPython")
+; use the wx backend, for both mayavi and matplotlib
+;;(setq py-python-command-args 
+;;  '("--gui=wx" "--pylab=wx" "-colors" "Linux"))
+(setq py-force-py-shell-name-p t)
+
+; switch to the interpreter after executing code
+(setq py-shell-switch-buffers-on-execute-p t)
+(setq py-switch-buffers-on-execute-p t)
+; don't split windows
+(setq py-split-windows-on-execute-p nil)
+; try to automagically figure out indentation
+(setq py-smart-indentation t)
+
+;; ; pymacs
+;; (add-to-list 'load-path "~/.emacs.d/pymacs-0.25")
+;; (autoload 'pymacs-apply "pymacs")
+;; (autoload 'pymacs-call "pymacs")
+;; (autoload 'pymacs-eval "pymacs" nil t)
+;; (autoload 'pymacs-exec "pymacs" nil t)
+;; (autoload 'pymacs-load "pymacs" nil t)
+;; (autoload 'pymacs-autoload "pymacs")
+;; (setq py-load-pymacs-p t)
+
+;; ; ropemacs
+;; (require 'pymacs)
+;; (pymacs-load "ropemacs" "rope-")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; http://astrofrog.github.com/astropy/development/codeguide_emacs.html
 ;; Automatically remove trailing whitespace when file is saved.
