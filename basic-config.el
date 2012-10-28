@@ -6,7 +6,7 @@
 (set-scroll-bar-mode 'right) 
 (setq
   scroll-margin 0                  
-  scroll-conservatively 100000
+  ;scroll-conservatively 100000
   scroll-preserve-screen-position 1)
 
 (setq make-backup-files nil) ; Disable creation of backup files
