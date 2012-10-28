@@ -48,3 +48,12 @@
 ; http://emacs-fu.blogspot.com/2008/12/easy-switching-between-visible-buffers.html
 (require 'windmove)
 (windmove-default-keybindings 'super)
+
+; In dired mode, Enter and ^ use the same buffer
+(add-hook 'dired-mode-hook
+  (lambda()
+    (define-key dired-mode-map (kbd "<return>")
+      'dired-find-alternate-file)
+    (define-key dired-mode-map (kbd "^")
+      (lambda () (interactive) (find-alternate-file "..")))
+  ))
