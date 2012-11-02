@@ -10,8 +10,8 @@
 (load-library "tramp-config")
 (load-library "color-theme-config")
 (load-library "python-config")
-(load-library "java-config")
-(load-library "ecb-config")
+;(load-library "java-config")
+;(load-library "ecb-config")
 
 ;(load-library "cedet-config")
 

@@ -50,6 +50,7 @@
 (windmove-default-keybindings 'super)
 
 ; In dired mode, Enter and ^ use the same buffer
+(put 'dired-find-alternate-file 'disabled nil)
 (add-hook 'dired-mode-hook
   (lambda()
     (define-key dired-mode-map (kbd "<return>")
