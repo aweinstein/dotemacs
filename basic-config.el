@@ -58,3 +58,8 @@
     (define-key dired-mode-map (kbd "^")
       (lambda () (interactive) (find-alternate-file "..")))
   ))
+
+; Set google-chrome as default browser
+; Should we use w3m?
+(setq browse-url-browser-function 'browse-url-generic
+      browse-url-generic-program "google-chrome")
