@@ -4,6 +4,17 @@
 (require 'python-mode)
 (add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; From http://www.jesshamrick.com/2012/09/18/emacs-as-a-python-ide/
+; https://raw.github.com/jhamrick/blog/master/emacs-python-tutorial/settings/python-settings.el
+
+; use IPython
+;(setq-default py-shell-name "ipython")
+;(setq-default py-which-bufname "IPython")
+
+; don't split windows
+(setq py-split-windows-on-execute-p nil)
+
 ;; http://astrofrog.github.com/astropy/development/codeguide_emacs.html
 ;; Automatically remove trailing whitespace when file is saved.
 (add-hook 'python-mode-hook
