@@ -10,6 +10,7 @@
 (load-library "tramp-config")
 (load-library "color-theme-config")
 (load-library "python-config")
+(load-library "dired-config")
 (load-library "funcdefs")
 ;(load-library "java-config")
 ;(load-library "ecb-config")
