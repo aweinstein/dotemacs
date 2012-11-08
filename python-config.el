@@ -9,8 +9,8 @@
 ; https://raw.github.com/jhamrick/blog/master/emacs-python-tutorial/settings/python-settings.el
 
 ; use IPython
-;(setq-default py-shell-name "ipython")
-;(setq-default py-which-bufname "IPython")
+(setq-default py-shell-name "ipython")
+(setq-default py-which-bufname "IPython")
 
 ; don't split windows
 (setq py-split-windows-on-execute-p nil)
