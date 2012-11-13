@@ -45,10 +45,11 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
-; http://emacs-fu.blogspot.com/2008/12/easy-switching-between-visible-buffers.html
 (require 'windmove)
-(windmove-default-keybindings 'super)
-
+(global-set-key (kbd "s-b")  'windmove-left)
+(global-set-key (kbd "s-f") 'windmove-right)
+(global-set-key (kbd "s-p")    'windmove-up)
+(global-set-key (kbd "s-n")  'windmove-down)
 
 ; Set google-chrome as default browser
 ; Should we use w3m?
