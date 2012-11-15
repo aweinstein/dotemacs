@@ -12,8 +12,11 @@
 (setq-default py-shell-name "ipython")
 (setq-default py-which-bufname "IPython")
 
-; don't split windows
+; Don't split windows
 (setq py-split-windows-on-execute-p nil)
+
+; Don't indent comments
+(setq py-indent-comments nil)
 
 ;; http://astrofrog.github.com/astropy/development/codeguide_emacs.html
 ;; Automatically remove trailing whitespace when file is saved.
