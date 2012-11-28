@@ -9,6 +9,7 @@
 (add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
 
 (setq TeX-parse-self t)
+(setq reftex-ref-macro-prompt nil)
 
 ; use evince for dvi and pdf viewer
 ; evince-dvi backend should be installed
@@ -21,10 +22,10 @@
  	("PDF Viewer" "evince %o")
  	("Google Chrome" "google-chrome %o")))
 
- (setq TeX-output-view-style
-       (quote
-        (("^pdf$" "." "evince -f %o")
-         ("^html?$" "." "iceweasel %o"))))
+(setq TeX-output-view-style
+      (quote
+       (("^pdf$" "." "evince -f %o")
+	("^html?$" "." "iceweasel %o"))))
 
 ;; (setq reftex-plug-into-AUCTeX t)
 
