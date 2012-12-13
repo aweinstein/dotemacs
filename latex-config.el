@@ -40,7 +40,3 @@
                       '(lambda()
                          (save-excursion
                            (delete-trailing-whitespace))))))
-
-
-
-

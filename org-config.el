@@ -1,6 +1,6 @@
 ; org-mode
 (setq load-path (cons "~/.emacs.d/org-mode/lisp/" load-path))
-(require 'org-install)
+;(require 'org-install)
 
 ;; flyspell mode for spell checking everywhere
 (add-hook 'org-mode-hook 'turn-on-flyspell 'append)

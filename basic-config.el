@@ -45,16 +45,6 @@
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
-; Move between frames
-(require 'windmove)
-(global-set-key (kbd "s-b")  'windmove-left)
-(global-set-key (kbd "s-f") 'windmove-right)
-(global-set-key (kbd "s-p")    'windmove-up)
-(global-set-key (kbd "s-n")  'windmove-down)
-
-(global-set-key (kbd "C-.") 'next-multiframe-window)
-(global-set-key (kbd "C-,") 'previous-multiframe-window)
-
 ; Set google-chrome as default browser
 ; Should we use w3m?
 (setq browse-url-browser-function 'browse-url-generic

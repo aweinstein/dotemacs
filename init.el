@@ -14,11 +14,11 @@
 (load-library "shell-config")
 (load-library "funcdefs")
 (load-library "assorted")
+(load-library "keybindings") ; keept it at the end
+
 ;(load-library "java-config")
 ;(load-library "ecb-config")
-
 ;(load-library "cedet-config")
-
 ;(load-library "malabar-config")
 ;(require 'pomodoro)
 
