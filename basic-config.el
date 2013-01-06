@@ -49,3 +49,5 @@
 ; Should we use w3m?
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome")
+
+(require 'magit)
