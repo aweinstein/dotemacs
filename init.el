@@ -12,6 +12,7 @@
 (load-library "python-config")
 (load-library "dired-config")
 (load-library "shell-config")
+(load-library "eshell-config")
 (load-library "funcdefs")
 (load-library "assorted")
 (load-library "keybindings") ; keept it at the end
