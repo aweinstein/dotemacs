@@ -7,3 +7,10 @@
 	 )))
 
 (setq eshell-prompt-regexp "^[^#$]*[#$] ")
+
+; Based on http://dryice.name/blog/emacs/eshell/
+(setq eshell-cmpl-cycle-completions nil)
+;; scroll to the bottom
+(setq eshell-scroll-to-bottom-on-output t)
+(setq eshell-scroll-show-maximum-output t)
+
