@@ -2,7 +2,7 @@
 (setq eshell-prompt-function
       (lambda ()
         (concat (getenv "USER") "@"
-		(system-name) 
+		(getenv "HOSTNAME") 
 		(if (= (user-uid) 0) " # " "$ ")
 	 )))
 
