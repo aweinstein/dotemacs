@@ -4,6 +4,10 @@
 (require 'tramp)
 (add-to-list 'tramp-default-proxies-alist
  	     '("shiner.mines.edu" nil "/ssh:aweinste@imagine.mines.edu:"))
+(add-to-list 'tramp-default-proxies-alist
+  	     '("jupiter.mines.edu" nil "/ssh:aweinste@imagine.mines.edu:"))
+(add-to-list 'tramp-default-proxies-alist
+  	     '("corona.mines.edu" nil "/ssh:aweinste@imagine.mines.edu:"))
 
 ; Show host name
 ; http://www.gnu.org/software/emacs/manual/html_node/tramp/Frequently-Asked-Questions.html
