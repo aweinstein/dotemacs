@@ -4,12 +4,11 @@
 
 (load-library "basic-config")
 (load-library "latex-config")
-;(load-library "org-config")
 (load-library "server-start-config")
 (load-library "ido-mode-config")
 (load-library "tramp-config")
 (load-library "color-theme-config")
-;(load-library "python-config")
+(load-library "package-config")
 (load-library "dired-config")
 (load-library "shell-config")
 (load-library "eshell-config")
@@ -17,6 +16,8 @@
 (load-library "assorted")
 (load-library "keybindings") ; keept it at the end
 
+;(load-library "org-config")
+;(load-library "python-config")
 ;(load-library "java-config")
 ;(load-library "ecb-config")
 ;(load-library "cedet-config")
