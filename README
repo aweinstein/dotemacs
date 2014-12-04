@@ -8,6 +8,7 @@ Install with ELPA:
 * zenburn-emacs: https://github.com/bbatsov/zenburn-emacs
 * elpy: https://github.com/jorgenschaefer/elpy
 * org: org-mode
+* exec-path-from-shell
 
 Instructions
 ------------
