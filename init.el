@@ -15,9 +15,9 @@
 (load-library "eshell-config")
 (load-library "funcdefs")
 (load-library "assorted")
+(load-library "org-config")
 (load-library "keybindings") ; keept it at the end
 
-;(load-library "org-config")
 ;(load-library "python-config")
 ;(load-library "java-config")
 ;(load-library "ecb-config")

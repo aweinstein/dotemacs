@@ -3,21 +3,16 @@ These are my emacs cofiguration files. Nothing really novel to see here.
 Requirements
 ------------
 
-Emacs packets that need to be in ~/.emacs.d that are not in this repository:
+Install with ELPA:
 
 * zenburn-emacs: https://github.com/bbatsov/zenburn-emacs
 * elpy: https://github.com/jorgenschaefer/elpy
-   
+* org: org-mode
+
 Instructions
 ------------
 $ git clone git@github.com:aweinstein/dotemacs.git ~/.emacs.d
 $ cd .emacs.d
 
-Can we install with ELPA?
-$ git clone git://orgmode.org/org-mode.git ~/.emacs.d/org-mode
-$ cd .emacs.d/org-mode
-$ make
 
-Can we install with ELPA?
-$ git clone git://github.com/bbatsov/zenburn-emacs.git themes
 

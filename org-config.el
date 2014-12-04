@@ -1,7 +1,3 @@
-; org-mode
-(setq load-path (cons "~/.emacs.d/org-mode/lisp/" load-path))
-;(require 'org-install)
-
 ;; flyspell mode for spell checking everywhere
 (add-hook 'org-mode-hook 'turn-on-flyspell 'append)
 
@@ -32,13 +28,13 @@
 ;; Subject: [Orgmode] Re: [bug] latex export ignores org-export-latex-default-packages-alist?
 ;; To: emacs-orgmode <at> gnu.org
 ;; Date: Wed, 26 Jan 2011 16:01:52 +0000
-(add-to-list 'org-export-latex-packages-alist '("" "amsmath" t))
-(setcar (rassoc '("wasysym" t) org-export-latex-default-packages-alist)	"integrals")
+; (add-to-list 'org-export-latex-packages-alist '("" "amsmath" t))
+; (setcar (rassoc '("wasysym" t) org-export-latex-default-packages-alist)	"integrals")
 
 
 (setq org-export-latex-listings t)
-(add-to-list 'org-export-latex-packages-alist '("" "listings"))
-(add-to-list 'org-export-latex-packages-alist '("" "color"))
+;(add-to-list 'org-export-latex-packages-alist '("" "listings"))
+;(add-to-list 'org-export-latex-packages-alist '("" "color"))
 
 
 ; http://soundandcomplete.com/2011/11/18/typesetting-a-document-with-lots-of-code-listings-using-emacs-org-mode-minted-and-latex/
