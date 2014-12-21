@@ -4,6 +4,7 @@ Requirements
 ------------
 
 Install with ELPA:
+(see http://ergoemacs.org/emacs/emacs_package_system.html for details)
 
 * zenburn-emacs: https://github.com/bbatsov/zenburn-emacs
 * elpy: https://github.com/jorgenschaefer/elpy
