@@ -10,6 +10,17 @@
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)
 
+; Set the agenda files
+(setq org-agenda-files (list "~/Dropbox/org/IT13I10035.org" 
+			     "~/Dropbox/org/ac3e.org"
+			     "~/Dropbox/org/andina.org"
+			     "~/Dropbox/org/otros.org"
+			     "~/Dropbox/org/tre.org"
+			     "~/Dropbox/org/MCIB.org"
+			     "~/Dropbox/org/administratrivia.org"
+			     "~/Dropbox/org/crhuv.org"
+			     "~/Dropbox/org/pt_mcib.org"))
+
 (require 'org-latex)
 (unless (boundp 'org-export-latex-classes)
   (setq org-export-latex-classes nil))

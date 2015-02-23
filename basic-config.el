@@ -50,3 +50,7 @@
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome")
 
+; Save customization configuration in a file differente than init.el
+
+(setq custom-file "~/.emacs.d/.emacs-custom.el")
+(load custom-file)
