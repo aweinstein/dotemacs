@@ -17,7 +17,7 @@
 			     "~/Dropbox/org/otros.org"
 			     "~/Dropbox/org/tre.org"
 			     "~/Dropbox/org/MCIB.org"
-			     "~/Dropbox/org/administratrivia.org"
+			     "~/Dropbox/org/admin.org"
 			     "~/Dropbox/org/crhuv.org"
 			     "~/Dropbox/org/pt_mcib.org"))
 
