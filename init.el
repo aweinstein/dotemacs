@@ -2,8 +2,8 @@
 
 (add-to-list 'load-path "~/.emacs.d")
 
-(load-library "basic-config")
 (load-library "package-config")
+(load-library "basic-config")
 (load-library "latex-config")
 (load-library "server-start-config")
 (load-library "ido-mode-config")
