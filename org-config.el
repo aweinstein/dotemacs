@@ -19,7 +19,8 @@
 			     "~/Dropbox/org/MCIB.org"
 			     "~/Dropbox/org/admin.org"
 			     "~/Dropbox/org/crhuv.org"
-			     "~/Dropbox/org/pt_mcib.org"))
+			     "~/Dropbox/org/pt_mcib.org"
+			     "~/Dropbox/org/maker.org"))
 
 (require 'org-latex)
 (unless (boundp 'org-export-latex-classes)
