@@ -6,7 +6,9 @@
 (add-hook 'LaTeX-mode-hook 'reftex-mode) ;turn on REFTeX mode by default
 (add-hook 'LaTeX-mode-hook 'flyspell-mode) ;turn on flyspell mode by default
 (setq TeX-save-query nil) ;autosave before compiling
-(add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
+;(add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
+(add-hook 'LaTeX-mode-hook 'visual-line-mode)
+
 
 (setq TeX-parse-self t)
 (setq reftex-ref-macro-prompt nil)

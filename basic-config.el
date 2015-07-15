@@ -31,7 +31,7 @@
 
 ; Set column width to 79 characters
 (setq-default fill-column 79)
-(add-hook 'text-mode-hook 'auto-fill-mode)
+;(add-hook 'text-mode-hook 'auto-fill-mode)
 
 ; Update files modified externally
 ; See http://www.emacswiki.org/emacs/RevertBuffer
