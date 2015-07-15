@@ -3,6 +3,8 @@ These are my emacs cofiguration files. Nothing really novel to see here.
 Requirements
 ------------
 
+* auctex ($ sudo aptitude install auctex)
+
 Install with ELPA:
 (see http://ergoemacs.org/emacs/emacs_package_system.html for details)
 
