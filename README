@@ -4,6 +4,7 @@ Requirements
 ------------
 
 * auctex ($ sudo aptitude install auctex)
+* aspell-es ($ sudo aptitude install aspell-es)
 
 Install with ELPA:
 (see http://ergoemacs.org/emacs/emacs_package_system.html for details)
