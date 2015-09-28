@@ -57,3 +57,6 @@
 
 (when (memq window-system '(x mac ns))
   (exec-path-from-shell-initialize))
+
+; Enable spell check on 
+(add-hook 'text-mode-hook 'flyspell-mode) ;turn on flyspell mode by default
