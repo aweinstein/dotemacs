@@ -16,9 +16,10 @@
 (load-library "funcdefs")
 (load-library "assorted")
 (load-library "org-config")
+(load-library "python-config")
 (load-library "keybindings") ; keept it at the end
 
-;(load-library "python-config")
+
 ;(load-library "java-config")
 ;(load-library "ecb-config")
 ;(load-library "cedet-config")
