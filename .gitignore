@@ -13,3 +13,4 @@ magit
 elpa
 .emacs-custom.el
 bookmarks
+session.*

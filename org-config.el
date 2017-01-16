@@ -11,16 +11,13 @@
 (org-clock-persistence-insinuate)
 
 ; Set the agenda files
-(setq org-agenda-files (list "~/Dropbox/org/IT13I10035.org" 
+(setq org-agenda-files (list "~/Dropbox/org/ID16I10322.org" 
 			     "~/Dropbox/org/ac3e.org"
-			     "~/Dropbox/org/andina.org"
 			     "~/Dropbox/org/otros.org"
 			     "~/Dropbox/org/tre.org"
 			     "~/Dropbox/org/MCIB.org"
 			     "~/Dropbox/org/admin.org"
-			     "~/Dropbox/org/crhuv.org"
-			     "~/Dropbox/org/pt_mcib.org"
-			     "~/Dropbox/org/maker.org"))
+			     ))
 
 (require 'org-latex)
 (unless (boundp 'org-export-latex-classes)
