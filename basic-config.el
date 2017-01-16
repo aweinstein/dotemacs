@@ -60,3 +60,6 @@
 
 ; Enable spell check on 
 (add-hook 'text-mode-hook 'flyspell-mode) ;turn on flyspell mode by default
+
+; Enable pdf-tools
+(pdf-tools-install)
