@@ -1,6 +1,6 @@
 (message "* --[ Loading AJW Emacs init file ]--")
 
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "~/.emacs.d/lisp")
 
 (load-library "package-config")
 (load-library "basic-config")
