@@ -3,21 +3,21 @@ These are my emacs cofiguration files. Nothing really novel to see here.
 Requirements
 ------------
 
-* auctex ($ sudo aptitude install auctex)
 * aspell-es ($ sudo aptitude install aspell-es)
 
 Install with ELPA:
 (see http://ergoemacs.org/emacs/emacs_package_system.html for details)
 
-* zenburn-emacs: https://github.com/bbatsov/zenburn-emacs
+* auctex
 * elpy: https://github.com/jorgenschaefer/elpy
-* org: org-mode
 * exec-path-from-shell
+* org: org-mode
+* zenburn-emacs: https://github.com/bbatsov/zenburn-emacs
 
 Instructions
 ------------
 $ git clone git@github.com:aweinstein/dotemacs.git ~/.emacs.d
-$ cd .emacs.d
+
 
 
 
