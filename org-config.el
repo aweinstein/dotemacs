@@ -19,7 +19,7 @@
 			     "~/Dropbox/org/admin.org"
 			     ))
 
-(require 'org-latex)
+;(require 'org-latex) no longer required in newer emacs versions
 (unless (boundp 'org-export-latex-classes)
   (setq org-export-latex-classes nil))
 (add-to-list 'org-export-latex-classes
