@@ -14,3 +14,4 @@ elpa
 .emacs-custom.el
 bookmarks
 session.*
+ido.last

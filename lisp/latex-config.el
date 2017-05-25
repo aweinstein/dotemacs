@@ -1,6 +1,6 @@
 ; Latex setup
 (require 'reftex)
-(setq-default TeX-master nil)
+;(setq-default TeX-master nil)
 (add-hook 'LaTeX-mode-hook 'TeX-PDF-mode) ;Turn on pdf-mode.
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode) ;turn on math-mode by default
 (add-hook 'LaTeX-mode-hook 'reftex-mode) ;turn on REFTeX mode by default
