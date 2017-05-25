@@ -6,7 +6,7 @@ Requirements
 * aspell-es ($ sudo aptitude install aspell-es)
 
 Install with ELPA:
-(see http://ergoemacs.org/emacs/emacs_package_system.html for details)
+(call `list-packages`, see http://ergoemacs.org/emacs/emacs_package_system.html for details)
 
 * auctex
 * elpy: https://github.com/jorgenschaefer/elpy

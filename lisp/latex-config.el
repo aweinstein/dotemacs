@@ -42,3 +42,6 @@
                       '(lambda()
                          (save-excursion
                            (delete-trailing-whitespace))))))
+
+; Increase size of equation previews
+(set-default 'preview-scale-function 1.2)
