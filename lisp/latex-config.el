@@ -33,7 +33,6 @@
 
 ;; (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 ;; (setq-default TeX-master nil)
-;; ;(add-hook 'LaTeX-mode-hook 'visual-line-mode)
 
 ;; Automatically remove trailing whitespace when file is saved.
 (add-hook 'LaTeX-mode-hook
