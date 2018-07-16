@@ -31,7 +31,6 @@
 
 ; Set column width to 79 characters
 (setq-default fill-column 79)
-;(add-hook 'text-mode-hook 'auto-fill-mode)
 
 ; Update files modified externally
 ; See http://www.emacswiki.org/emacs/RevertBuffer
@@ -58,6 +57,9 @@
 (when (memq window-system '(x mac ns))
   (exec-path-from-shell-initialize))
 
-; Enable spell check on 
+; Enable spell check on text mode
 (add-hook 'text-mode-hook 'flyspell-mode) ;turn on flyspell mode by default
+(add-hook 'text-mode-hook 'visual-line-mode)
 
+; Enable pdf-tools
+;(pdf-tools-install)

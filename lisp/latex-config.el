@@ -6,7 +6,6 @@
 (add-hook 'LaTeX-mode-hook 'reftex-mode) ;turn on REFTeX mode by default
 (add-hook 'LaTeX-mode-hook 'flyspell-mode) ;turn on flyspell mode by default
 (setq TeX-save-query nil) ;autosave before compiling
-;(add-hook 'LaTeX-mode-hook 'turn-on-auto-fill)
 (add-hook 'LaTeX-mode-hook 'visual-line-mode)
 
 
@@ -33,7 +32,6 @@
 
 ;; (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 ;; (setq-default TeX-master nil)
-;; ;(add-hook 'LaTeX-mode-hook 'visual-line-mode)
 
 ;; Automatically remove trailing whitespace when file is saved.
 (add-hook 'LaTeX-mode-hook
