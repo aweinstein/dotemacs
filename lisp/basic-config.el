@@ -52,8 +52,8 @@
 
 ; Save customization configuration in a file differente than init.el
 
-(setq custom-file "~/.emacs.d/.emacs-custom.el")
-(load custom-file)
+(setq custom-file "~/.emacs.d/lisp/.emacs-custom.el")
+;(load custom-file)
 
 (when (memq window-system '(x mac ns))
   (exec-path-from-shell-initialize))
