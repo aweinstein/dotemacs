@@ -59,6 +59,7 @@
 
 ; Enable spell check on text mode
 (add-hook 'text-mode-hook 'flyspell-mode) ;turn on flyspell mode by default
+(add-hook 'text-mode-hook 'turn-on-flyspell)
 (add-hook 'text-mode-hook 'visual-line-mode)
 
 ; Enable pdf-tools
