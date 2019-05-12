@@ -64,3 +64,5 @@
 
 ; Enable pdf-tools
 ;(pdf-tools-install)
+
+(defalias 'list-buffers 'ibuffer)
