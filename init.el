@@ -9,7 +9,6 @@
 (load-library "ido-mode-config")
 (load-library "tramp-config")
 (load-library "color-theme-config")
-(load-library "elpy-config")
 (load-library "dired-config")
 (load-library "shell-config")
 (load-library "eshell-config")

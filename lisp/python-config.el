@@ -7,6 +7,7 @@
                          (save-excursion
                            (delete-trailing-whitespace))))))
 ;; Elpy
+;; See http://elpy.readthedocs.org/en/latest/index.html
 (require 'package)
 (add-to-list 'package-archives
              '("melpa-stable" . "https://stable.melpa.org/packages/"))
