@@ -8,7 +8,7 @@
 (setq TeX-save-query nil) ;autosave before compiling
 (add-hook 'LaTeX-mode-hook 'visual-line-mode)
 
-
+(setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq reftex-ref-macro-prompt nil)
 
@@ -31,7 +31,7 @@
 ;; (setq reftex-plug-into-AUCTeX t)
 
 ;; (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
-;; (setq-default TeX-master nil)
+
 
 ;; Automatically remove trailing whitespace when file is saved.
 (add-hook 'LaTeX-mode-hook
