@@ -19,6 +19,19 @@
 			     "~/Dropbox/org/admin.org"
 			     ))
 
+; Archive all DONE tasks
+; Based on https://stackoverflow.com/a/27043756, with 'tree changed by 'file
+
+(defun org-archive-done-tasks ()
+  (interactive)
+  (org-map-entries
+   (lambda ()
+     (org-archive-subtree)
+     (setq org-map-continue-from (org-element-property :begin (org-element-at-point))))
+   "/DONE" 'agenda))
+(define-key global-map "\C-cx" 'org-agenda)
+
+
 ;(require 'org-latex) no longer required in newer emacs versions
 (unless (boundp 'org-export-latex-classes)
   (setq org-export-latex-classes nil))
