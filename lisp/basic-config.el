@@ -66,3 +66,6 @@
 ;(pdf-tools-install)
 
 (defalias 'list-buffers 'ibuffer)
+
+; Magit
+(global-set-key (kbd "C-x g") 'magit-status)
