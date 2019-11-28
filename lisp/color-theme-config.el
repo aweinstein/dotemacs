@@ -9,4 +9,8 @@
 
 ;; Monokai
 ;; M-x package-install monokai-theme for the first time
-(load-theme 'monokai t)
+;; (load-theme 'monokai t)
+
+;; Cyberpunk
+;; M-x package-install cyberpunk-theme for the first time
+(load-theme 'cyberpunk t)
