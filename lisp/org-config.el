@@ -32,14 +32,14 @@
 ;;show me tasks scheduled or due in next fortnight
 (setq org-agenda-span (quote fortnight))
 ;;don't show tasks as scheduled if they are already shown as a deadline
-(setq org-agenda-skip-scheduled-if-deadline-is-shown t)
+;(setq org-agenda-skip-scheduled-if-deadline-is-shown t)
 ;;don't give awarning colour to tasks with impending deadlines
 ;;if they are scheduled to be done
 (setq org-agenda-skip-deadline-prewarning-if-scheduled (quote pre-scheduled))
 ;;don't show tasks that are scheduled or have deadlines in the
 ;;normal todo list
-(setq org-agenda-todo-ignore-deadlines (quote all))
-(setq org-agenda-todo-ignore-scheduled (quote all))
+;(setq org-agenda-todo-ignore-deadlines (quote all))
+;(setq org-agenda-todo-ignore-scheduled (quote all))
 ;;sort tasks in order of when they are due and then by priority
 (setq org-agenda-sorting-strategy
   (quote
