@@ -1,16 +1,12 @@
-; Use zenburn colortheme: https://github.com/bbatsov/zenburn-emacs
-; $ git clone https://github.com/bbatsov/zenburn-emacs ~/.emacs.d/themes/
-
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-;; (load-theme 'zenburn t)
+; Install color theme with M-x package-install theme-name
 
 ;For ReST mode with dark background
-(setq frame-background-mode 'dark)
+;(setq frame-background-mode 'dark)
+; Some dark themes I link
+; (load-theme 'monokai t)
+; (load-theme 'cyberpunk t)
 
-;; Monokai
-;; M-x package-install monokai-theme for the first time
-;; (load-theme 'monokai t)
-
-;; Cyberpunk
-;; M-x package-install cyberpunk-theme for the first time
-(load-theme 'cyberpunk t)
+; (load-theme 'occidental t)
+; (load-theme 'poet t)
+; (load-theme 'light-soap t)
+(load-theme 'autumn-light t)
