@@ -28,7 +28,7 @@
 ;;open agenda in current window
 (setq org-agenda-window-setup (quote current-window))
 ;;warn me of any deadlines in next 7 days
-(setq org-deadline-warning-days 7)
+(setq org-deadline-warning-days 0)
 ;;show me tasks scheduled or due in next fortnight
 (setq org-agenda-span (quote fortnight))
 ;;don't show tasks as scheduled if they are already shown as a deadline
