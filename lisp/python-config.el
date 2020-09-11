@@ -8,8 +8,20 @@
                            (delete-trailing-whitespace))))))
 ;; Elpy
 ;; See http://elpy.readthedocs.org/en/latest/index.html
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/"))
-(package-initialize)
+;; Install using MELPA !!!
+
+;; (use-package elpy
+;;   :ensure t
+;;   :init
+;;   (elpy-enable))
+
+;; (require 'package)
+;; (add-to-list 'package-archives
+;;              '("melpa-stable" . "https://stable.melpa.org/packages/"))
+;; (package-initialize)
 (elpy-enable)
+(setq elpy-rpc-python-command "/home/ajw/.local/anaconda/bin/python")
+(setq python-shell-interpreter "/home/ajw/.local/anaconda/bin/ipython"
+      python-shell-interpreter-args "-i --simple-prompt")
+
+(setq elpy-rpc-virtualenv-path "/home/ajw/.local/anaconda/bin/")
