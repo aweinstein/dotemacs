@@ -27,5 +27,3 @@ is already acting as a server for client processes."
 
 (my-server-start)
 
-(require 'edit-server)
-(edit-server-start)
