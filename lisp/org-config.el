@@ -48,7 +48,14 @@
     (tags priority-down category-keep)
     (search category-keep))))
 
-
+;; For bookmarks. From:
+;; https://karl-voit.at/2014/08/10/bookmarks-with-orgmode/
+;; https://github.com/rexim/org-cliplink
+(setq org-capture-templates
+  '(
+    ("b" "Bookmark" entry (file "~/Dropbox/org/bookmarks.org")
+     "* %(org-cliplink-capture)\n:PROPERTIES:\n:CREATED: %U\n:END:\n\n" :empty-lines 0)
+    ))
 
 ;(require 'org-latex) no longer required in newer emacs versions
 (unless (boundp 'org-export-latex-classes)

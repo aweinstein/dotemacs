@@ -13,6 +13,7 @@ Install with ELPA:
 * exec-path-from-shell
 * org: org-mode
 * zenburn-emacs: https://github.com/bbatsov/zenburn-emacs
+* cliplink
 
 Instructions
 ------------
