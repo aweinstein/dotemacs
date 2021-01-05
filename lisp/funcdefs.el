@@ -9,6 +9,7 @@
             (buffer-name))))
 
 (global-set-key [pause] 'toggle-current-window-dedication)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; From https://www.emacswiki.org/emacs/UnfillParagraph
 (defun unfill-paragraph (&optional region)
@@ -21,3 +22,4 @@
 
 ;; Handy key definition
 (define-key global-map "\M-Q" 'unfill-paragraph)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
