@@ -66,3 +66,8 @@
 
 ; Magit
 (global-set-key (kbd "C-x g") 'magit-status)
+
+
+;; Always use english for dates
+(setq system-time-locale "C") 
+
