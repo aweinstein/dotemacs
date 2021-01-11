@@ -64,10 +64,12 @@
 
 (defalias 'list-buffers 'ibuffer)
 
-; Magit
-(global-set-key (kbd "C-x g") 'magit-status)
-
-
 ;; Always use english for dates
 (setq system-time-locale "C") 
 
+
+;;;;;;;;;;;;;;;;;;; Key Bindings
+;; Magit
+(global-set-key (kbd "C-x g") 'magit-status)
+;; org-mode
+(global-set-key (kbd "<f12>") 'org-capture)
