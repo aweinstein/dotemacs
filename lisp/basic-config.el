@@ -73,3 +73,5 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 ;; org-mode
 (global-set-key (kbd "<f12>") 'org-capture)
+;; Since M-Tab is used by the OS, we remap it here
+(global-set-key (kbd "C-x t") 'pcomplete)
