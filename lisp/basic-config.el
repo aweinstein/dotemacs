@@ -67,6 +67,9 @@
 ;; Always use english for dates
 (setq system-time-locale "C") 
 
+;; Yasnippet
+(yas-global-mode 1)
+
 
 ;;;;;;;;;;;;;;;;;;; Key Bindings
 ;; Magit
