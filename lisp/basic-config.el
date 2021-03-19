@@ -70,6 +70,9 @@
 ;; Yasnippet
 (yas-global-mode 1)
 
+;; Flycheck
+(global-flycheck-mode t)
+
 
 ;;;;;;;;;;;;;;;;;;; Key Bindings
 ;; Magit
