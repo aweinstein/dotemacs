@@ -1,5 +1,9 @@
-(setq inhibit-startup-message t)
+;;; init.el --- AJW's init file
+;;; Commentary:
+;;; My Emacs init file
 
+;;; Code:
+(message "* --[ Loading AJW Emacs init file ]--")
 
 (require 'package)
 (setq package-enable-at-startup nil)
@@ -13,10 +17,20 @@
 (package-refresh-contents)
 (package-install 'use-package))
 
-(use-package try
-:ensure t)
+;; The remaining of the config is separeted in files
+(add-to-list 'load-path "~/.emacs.d/lisp")
+(load-library "basic-config")
 
-(use-package which-key
-:ensure t
-:config
-(which-key-mode))
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (which-key try use-package))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
