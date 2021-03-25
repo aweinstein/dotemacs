@@ -1,0 +1,11 @@
+These are my emacs cofiguration files. Nothing really novel to see here.
+
+This new branch uses `use-package`.
+
+Instructions
+------------
+$ git clone git@github.com:aweinstein/dotemacs.git ~/.emacs.d
+
+
+
+
