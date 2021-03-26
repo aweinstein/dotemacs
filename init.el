@@ -35,7 +35,7 @@
 (load-library "funcdefs")
 (load-library "assorted")
 (load-library "org-config")
-;; (load-library "python-config")
+(load-library "python-config")
 (load-library "keybindings") ; keept it at the end
 
 (message "* --[ Done with AJW Emacs init file ]--")
