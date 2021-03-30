@@ -100,6 +100,7 @@
 ;; Muestra el reloj en formato 24 hrs
 (setq display-time-24hr-format t) ; Muestra el reloj en formato 24 hrs
 (setq display-time-format "%H:%M"); Le da formato H:M
+(setq display-time-default-load-average nil)
 (display-time) ; muestra el reloj
 
 
