@@ -61,11 +61,17 @@
 :init
 (yas-global-mode 1))
 
+;; Spaceline
+(use-package spaceline
+  :ensure t
+  )
 
 ;;;;;;;;; Consel and swiper ;;;;;;;;;;;;;
 (use-package counsel
-:ensure t
-)
+  :ensure t
+  :init
+  (spaceline-emacs-theme)
+  )
 
 (use-package swiper
 :ensure try
@@ -90,6 +96,13 @@
 (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
 (define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
 ))
+
+;; Muestra el reloj en formato 24 hrs
+(setq display-time-24hr-format t) ; Muestra el reloj en formato 24 hrs
+(setq display-time-format "%H:%M"); Le da formato H:M
+(display-time) ; muestra el reloj
+
+
 ;;;;; From old basic-config.el
 
 

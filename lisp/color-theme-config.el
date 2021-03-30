@@ -13,3 +13,7 @@
 :ensure t
 :config (load-theme 'autumn-light t))
 
+;; Otros temas para probar
+;; Moe
+;; Nimbus
+;; Material
