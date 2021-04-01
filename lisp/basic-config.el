@@ -103,6 +103,9 @@
 (setq display-time-default-load-average nil)
 (display-time) ; muestra el reloj
 
+;; Use ibuffer
+(defalias 'list-buffers 'ibuffer)
+;; (defalias 'list-buffers 'ibuffer-other-window) ; make ibuffer default
 
 ;;;;; From old basic-config.el
 
@@ -125,6 +128,6 @@
 ;; ; Enable pdf-tools
 ;; ;(pdf-tools-install)
 
-;; (defalias 'list-buffers 'ibuffer)
+
 
 
