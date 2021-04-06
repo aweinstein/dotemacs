@@ -4,3 +4,4 @@ org-clock-save.el
 recentf
 auto-save-list
 session*
+ac-comphist.dat

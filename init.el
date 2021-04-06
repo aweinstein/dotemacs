@@ -26,7 +26,6 @@
 
 (load-library "latex-config")
 (load-library "server-start-config")
-;; (load-library "ido-mode-config")
 (load-library "tramp-config")
 (load-library "color-theme-config")
 (load-library "dired-config")

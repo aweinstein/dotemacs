@@ -105,17 +105,17 @@
 
 ;; Use ibuffer
 (defalias 'list-buffers 'ibuffer)
-;; (defalias 'list-buffers 'ibuffer-other-window) ; make ibuffer default
+;; (defalias 'list-buffers 'ibuffer-other-window)
+
+(use-package auto-complete
+  :ensure t
+  :init
+  (progn
+    (ac-config-default)
+    (global-auto-complete-mode t)
+    ))
 
 ;;;;; From old basic-config.el
-
-
-;; ; Set google-chrome as default browser
-;; ; Should we use w3m?
-;; (setq browse-url-browser-function 'browse-url-generic
-;;       browse-url-generic-program "google-chrome")
-
-;; ;(load custom-file)
 
 ;; (when (memq window-system '(x mac ns))
 ;;   (exec-path-from-shell-initialize))
@@ -124,10 +124,3 @@
 ;; (add-hook 'text-mode-hook 'flyspell-mode) ;turn on flyspell mode by default
 ;; (add-hook 'text-mode-hook 'turn-on-flyspell)
 ;; (add-hook 'text-mode-hook 'visual-line-mode)
-
-;; ; Enable pdf-tools
-;; ;(pdf-tools-install)
-
-
-
-
