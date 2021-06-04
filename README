@@ -9,7 +9,10 @@ $ git clone git@github.com:aweinstein/dotemacs.git ~/.emacs.d
 
 External packages
 -----------------
-- flacke8
+- flake8
+- aspell-en
+- aspell-es
+
 
 
 
