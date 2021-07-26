@@ -1,19 +1,31 @@
+;;; init.el --- AJW's init file
+;;; Commentary:
+;;; My Emacs init file
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
-
+;;; Code:
 (message "* --[ Loading AJW Emacs init file ]--")
 
-(add-to-list 'load-path "~/.emacs.d/lisp")
+;; Based on https://cestlaz.github.io/posts/using-emacs-1-setup/
+(require 'package)
+(setq package-enable-at-startup nil)
+(add-to-list 'package-archives
+'("melpa" . "https://melpa.org/packages/"))
 
-(load-library "package-config")
+(package-initialize)
+
+;; Bootstrap `use-package'
+(unless (package-installed-p 'use-package)
+(package-refresh-contents)
+(package-install 'use-package))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; The remaining of the config is separeted in files
+(add-to-list 'load-path "~/.emacs.d/lisp")
 (load-library "basic-config")
+
 (load-library "latex-config")
 (load-library "server-start-config")
-(load-library "ido-mode-config")
 (load-library "tramp-config")
 (load-library "color-theme-config")
 (load-library "dired-config")
@@ -24,12 +36,5 @@
 (load-library "org-config")
 (load-library "python-config")
 (load-library "keybindings") ; keept it at the end
-
-
-;(load-library "java-config")
-;(load-library "ecb-config")
-;(load-library "cedet-config")
-;(load-library "malabar-config")
-;(require 'pomodoro)
 
 (message "* --[ Done with AJW Emacs init file ]--")

@@ -1,24 +1,18 @@
 These are my emacs cofiguration files. Nothing really novel to see here.
 
-Requirements
-------------
-
-* aspell-es ($ sudo aptitude install aspell-es)
-
-Install with ELPA:
-(call `list-packages`, see http://ergoemacs.org/emacs/emacs_package_system.html for details)
-
-* auctex
-* elpy: https://github.com/jorgenschaefer/elpy
-* exec-path-from-shell
-* org: org-mode
-* zenburn-emacs: https://github.com/bbatsov/zenburn-emacs
-* cliplink
+This new branch uses `use-package`. Based on https://cestlaz.github.io/posts/using-emacs-1-setup/ .
 
 Instructions
 ------------
 $ git clone git@github.com:aweinstein/dotemacs.git ~/.emacs.d
 
+
+
+External packages
+-----------------
+- flake8
+- aspell-en
+- aspell-es
 
 
 

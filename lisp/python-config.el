@@ -19,9 +19,14 @@
 ;; (add-to-list 'package-archives
 ;;              '("melpa-stable" . "https://stable.melpa.org/packages/"))
 ;; (package-initialize)
-(elpy-enable)
-(setq elpy-rpc-python-command "/home/ajw/.local/anaconda/bin/python")
-(setq python-shell-interpreter "/home/ajw/.local/anaconda/bin/ipython"
-      python-shell-interpreter-args "-i --simple-prompt")
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable)
+  (setq elpy-rpc-python-command "/home/ajw/.local/anaconda/bin/python")
+  (setq python-shell-interpreter "/home/ajw/.local/anaconda/bin/ipython"
+	python-shell-interpreter-args "-i --simple-prompt")
 
-(setq elpy-rpc-virtualenv-path "/home/ajw/.local/anaconda/bin/")
+  (setq elpy-rpc-virtualenv-path "/home/ajw/.local/anaconda/bin/")
+)
+

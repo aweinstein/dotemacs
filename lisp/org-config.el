@@ -1,12 +1,15 @@
 ;; flyspell mode for spell checking everywhere
 (add-hook 'org-mode-hook 'turn-on-flyspell 'append)
 
+;; Enable visual-line-mode
+(add-hook 'org-mode-hook #'visual-line-mode)
+
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
-;    To save the clock history across Emacs sessions, use 
+;; To save the clock history across Emacs sessions, use 
 (setq org-clock-persist 'history)
 (org-clock-persistence-insinuate)
 
