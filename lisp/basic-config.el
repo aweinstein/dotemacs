@@ -61,7 +61,12 @@
   (use-package yasnippet-snippets
     :ensure t)
   :init
-  (yas-global-mode 1))
+  (yas-global-mode 1)
+  ;; Avoid confict with autocomplete
+  (define-key yas-minor-mode-map (kbd "<tab>") nil)
+  (define-key yas-minor-mode-map (kbd "TAB") nil)
+  (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
+  )
 
 ;; Spaceline
 (use-package spaceline
@@ -116,10 +121,6 @@
     (ac-config-default)
     (global-auto-complete-mode t)
     )
-  ;; Avoid confict with autocomplete
-  (define-key yas-minor-mode-map (kbd "<tab>") nil)
-  (define-key yas-minor-mode-map (kbd "TAB") nil)
-  (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
   )
 
 
