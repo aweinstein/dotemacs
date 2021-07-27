@@ -115,7 +115,13 @@
   (progn
     (ac-config-default)
     (global-auto-complete-mode t)
-    ))
+    )
+  ;; Avoid confict with autocomplete
+  (define-key yas-minor-mode-map (kbd "<tab>") nil)
+  (define-key yas-minor-mode-map (kbd "TAB") nil)
+  (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
+  )
+
 
 ;;;;; From old basic-config.el
 
