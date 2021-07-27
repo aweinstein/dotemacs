@@ -86,9 +86,5 @@
 ;(add-to-list 'org-export-latex-packages-alist '("" "listings"))
 ;(add-to-list 'org-export-latex-packages-alist '("" "color"))
 
-
-; http://soundandcomplete.com/2011/11/18/typesetting-a-document-with-lots-of-code-listings-using-emacs-org-mode-minted-and-latex/
-; minted latex export 
-;; (setq org-export-latex-listings 'minted)
-;; (setq org-export-latex-minted-options '(("frame" "lines") ("fontsize" "\\footnotesize")
-;;     ("linenos" "")))
+;; Start with the outline folded
+(setq org-startup-folded t)
