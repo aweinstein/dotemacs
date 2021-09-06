@@ -34,6 +34,7 @@
 (load-library "funcdefs")
 (load-library "assorted")
 (load-library "org-config")
+(load-library "lsp-config")
 (load-library "python-config")
 (load-library "keybindings") ; keept it at the end
 
