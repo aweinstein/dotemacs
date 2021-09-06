@@ -28,5 +28,13 @@
 	python-shell-interpreter-args "-i --simple-prompt")
 
   (setq elpy-rpc-virtualenv-path "/home/ajw/.local/anaconda/bin/")
-)
+  )
 
+(use-package conda
+  :ensure t
+  :config (progn
+            (conda-env-initialize-interactive-shells)
+            (conda-env-initialize-eshell)
+            (conda-env-autoactivate-mode t)
+            ;;(setq conda-env-home-directory (expand-file-name "~/.local/anaconda"))
+            (custom-set-variables '(conda-anaconda-home "/home/ajw/.local/anaconda"))))
