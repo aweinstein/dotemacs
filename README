@@ -4,7 +4,7 @@ This new branch uses `use-package`. Based on https://cestlaz.github.io/posts/usi
 
 Instructions
 ------------
-$ git clone git@github.com:aweinstein/dotemacs.git ~/.emacs.d
+$ git clone https://gitlab.com/aweinstein/dotemacs.git ~/.emacs.d
 
 
 
@@ -13,6 +13,7 @@ External packages
 - flake8
 - aspell-en
 - aspell-es
+- pyright (pip install pyright)
 
 
 
