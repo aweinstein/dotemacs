@@ -40,6 +40,7 @@
                           (lsp))))  ; or lsp-deferred
 
 (use-package pyvenv
+  :ensure t
   :after python
   ;; :custom
   ;; (pyvenv-default-virtual-env-name (expand-file-name (format "%s/myenv/" xdg-data)))
