@@ -51,8 +51,8 @@
 ;; on the fly syntax checking
 (use-package flycheck
   :ensure t
-  :hook python-mode
-  )
+  :init
+  (add-hook 'python-mode-hook #'flycheck-mode))
 
 ;; snippets and snippet expansion
 (use-package yasnippet
