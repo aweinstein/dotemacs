@@ -114,13 +114,8 @@
   (company-idle-delay 0.5)
   (company-minimum-prefix-length 1)
   (company-show-quick-access t)
-  (company-tooltip-align-annotations 't))
-
-(use-package company-box
-  :ensure t
-  :if (display-graphic-p)
-  :after company
-  :hook (company-mode . company-box-mode))
+  (company-tooltip-align-annotations 't)
+)
 
 ;; Muestra el reloj en formato 24 hrs
 (setq display-time-24hr-format t) ; Muestra el reloj en formato 24 hrs
