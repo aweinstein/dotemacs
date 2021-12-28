@@ -104,6 +104,24 @@
     (define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
     ))
 
+;; From https://github.com/rememberYou/.emacs.d/blob/master/config.org#auto-completion
+(use-package company
+  :ensure t
+  :after lsp-mode
+  :hook (lsp-mode . company-mode)
+  :custom
+  (company-begin-commands '(self-insert-command))
+  (company-idle-delay 0.5)
+  (company-minimum-prefix-length 1)
+  (company-show-quick-access t)
+  (company-tooltip-align-annotations 't))
+
+(use-package company-box
+  :ensure t
+  :if (display-graphic-p)
+  :after company
+  :hook (company-mode . company-box-mode))
+
 ;; Muestra el reloj en formato 24 hrs
 (setq display-time-24hr-format t) ; Muestra el reloj en formato 24 hrs
 (setq display-time-format "%H:%M"); Le da formato H:M
