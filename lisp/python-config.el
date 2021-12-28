@@ -47,4 +47,3 @@
   ;; (pyvenv-workon (expand-file-name (format "%s/myenv/" xdg-data)))
   :config (pyvenv-tracking-mode))
 
-(message "* --[ Done with AJW python configuration ]--")
