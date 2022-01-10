@@ -28,9 +28,9 @@
               ("M-[" . python-nav-backward-block)
               ("M-]" . python-nav-forward-block)
               ("M-|" . python-remove-unused-imports))
-  :custom
-  (flycheck-pylintrc "~/.pylintrc")
-  (flycheck-python-pylint-executable "/usr/bin/pylint")
+  ;; :custom
+  ;; (flycheck-pylintrc "~/.pylintrc")
+  ;; (flycheck-python-pylint-executable "/usr/bin/pylint")
   )
 
 (use-package lsp-pyright
