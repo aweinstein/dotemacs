@@ -32,8 +32,10 @@
 (setq org-agenda-window-setup (quote current-window))
 ;;warn me of any deadlines in next 7 days
 (setq org-deadline-warning-days 0)
-;;show me tasks scheduled or due in next fortnight
+;;show me tasks scheduled or due in next fortnight and starting yesterday
 (setq org-agenda-span (quote fortnight))
+(setq org-agenda-start-day "0d")
+(setq org-agenda-start-on-weekday nil)
 ;;don't show tasks as scheduled if they are already shown as a deadline
 ;(setq org-agenda-skip-scheduled-if-deadline-is-shown t)
 ;;don't give awarning colour to tasks with impending deadlines
