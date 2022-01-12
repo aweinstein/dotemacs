@@ -12,9 +12,6 @@
 ;; kill the selected text just by hitting the Backspace key.
 (delete-selection-mode 1)
 
-;; Enable column numbering
-(column-number-mode 1)
-
 ;; Enable show parenthesis mode
 (show-paren-mode 1)
 
