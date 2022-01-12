@@ -126,3 +126,13 @@
 ;; Use ibuffer
 (defalias 'list-buffers 'ibuffer)
 ;; (defalias 'list-buffers 'ibuffer-other-window)
+
+;; Show line numbers (from https://www.youtube.com/watch?v=IspAZtNTslY)
+(column-number-mode)
+(global-display-line-numbers-mode t)
+;; Disable line numbers for some modes
+(dolist (mode '(org-mode-hook
+		term-mode-hook
+		eshell-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 0))))
+
