@@ -124,7 +124,8 @@
 (defalias 'list-buffers 'ibuffer)
 ;; (defalias 'list-buffers 'ibuffer-other-window)
 
-;; Show line numbers (from https://www.youtube.com/watch?v=IspAZtNTslY)
+;; UI improvements from  https://www.youtube.com/watch?v=IspAZtNTslY
+;; Show line numbers 
 (column-number-mode)
 (global-display-line-numbers-mode t)
 ;; Disable line numbers for some modes
