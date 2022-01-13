@@ -37,7 +37,7 @@
   :ensure t
   :hook (python-mode . (lambda ()
                           (require 'lsp-pyright)
-                          (lsp))))  ; or lsp-deferred
+                          (lsp-deferred))))  ; lsp or lsp-deferred
 
 (use-package pyvenv
   :ensure t
@@ -45,5 +45,12 @@
   ;; :custom
   ;; (pyvenv-default-virtual-env-name (expand-file-name (format "%s/myenv/" xdg-data)))
   ;; (pyvenv-workon (expand-file-name (format "%s/myenv/" xdg-data)))
-  :config (pyvenv-tracking-mode))
+  ;;:config (pyvenv-tracking-mode)
+  :config
+  (pyvenv-mode 1)
+  )
 
+;; From https://github.com/jorgenschaefer/pyvenv/issues/95
+(add-hook 'pyvenv-post-activate-hooks
+          #'(lambda ()
+              (call-interactively #'lsp-workspace-restart)))
