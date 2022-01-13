@@ -131,6 +131,7 @@
 ;; Disable line numbers for some modes
 (dolist (mode '(org-mode-hook
 		term-mode-hook
-		eshell-mode-hook))
+		eshell-mode-hook
+		org-agenda-mode))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
