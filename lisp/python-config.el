@@ -54,3 +54,12 @@
 (add-hook 'pyvenv-post-activate-hooks
           #'(lambda ()
               (call-interactively #'lsp-workspace-restart)))
+
+(use-package ipython-shell-send
+  :ensure t
+  :after python
+  :config
+  (setq python-shell-interpreter "ipython"
+	python-shell-interpreter-args "--simple-prompt"
+	))
+
