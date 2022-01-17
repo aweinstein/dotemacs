@@ -15,15 +15,15 @@
   :ensure flycheck
   :delight "π"
   :preface
-  (defun python-remove-unused-imports()
-    "Remove unused imports and unused variables with autoflake."
-    (interactive)
-    (if (executable-find "autoflake")
-        (progn
-          (shell-command (format "autoflake --remove-all-unused-imports -i %s"
-                                 (shell-quote-argument (buffer-file-name))))
-          (revert-buffer t t t))
-      (warn "[✗] python-mode: Cannot find autoflake executable.")))
+  ;; (defun python-remove-unused-imports()
+  ;;   "Remove unused imports and unused variables with autoflake."
+  ;;   (interactive)
+  ;;   (if (executable-find "autoflake")
+  ;;       (progn
+  ;;         (shell-command (format "autoflake --remove-all-unused-imports -i %s"
+  ;;                                (shell-quote-argument (buffer-file-name))))
+  ;;         (revert-buffer t t t))
+  ;;     (warn "[✗] python-mode: Cannot find autoflake executable.")))
   :bind (:map python-mode-map
               ("M-[" . python-nav-backward-block)
               ("M-]" . python-nav-forward-block)
