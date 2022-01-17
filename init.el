@@ -36,6 +36,5 @@
 (load-library "org-config")
 (load-library "lsp-config")
 (load-library "python-config")
-(load-library "keybindings") ; keept it at the end
 
 (message "* --[ Done with AJW Emacs init file ]--")
