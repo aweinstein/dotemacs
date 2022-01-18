@@ -137,3 +137,5 @@
 
 (windmove-default-keybindings)
 
+(winner-mode)
+
