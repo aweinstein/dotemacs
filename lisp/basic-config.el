@@ -136,3 +136,4 @@
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
 (windmove-default-keybindings)
+
