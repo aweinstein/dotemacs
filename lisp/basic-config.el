@@ -132,7 +132,8 @@
 (dolist (mode '(org-mode-hook
 		term-mode-hook
 		eshell-mode-hook
-		org-agenda-mode))
+		org-agenda-mode-hook
+		help-mode-hook))
   (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
 (windmove-default-keybindings)
