@@ -70,7 +70,7 @@
   :ensure t
   )
 
-;;;;;;;;; Consel and swiper ;;;;;;;;;;;;;
+;;;;;;;;; Counsel and swiper ;;;;;;;;;;;;;
 (use-package counsel
   :ensure t
   :init
@@ -99,6 +99,8 @@
     (global-set-key (kbd "C-x l") 'counsel-locate)
     (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
     (define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
+    (setq swiper-use-visual-line nil)
+    (setq swiper-use-visual-line-p (lambda (a) nil))
     ))
 
 ;; From https://github.com/rememberYou/.emacs.d/blob/master/config.org#auto-completion
