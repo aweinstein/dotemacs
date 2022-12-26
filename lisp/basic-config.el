@@ -147,7 +147,9 @@
 ;; of the same mode
 ;; From https://github.com/daviwil/emacs-from-scratch/blob/master/show-notes/Emacs-Tips-DisplayBuffer-1.org
 (setq display-buffer-base-action
-  '((display-buffer-reuse-window
-     display-buffer-reuse-mode-window
-     display-buffer-same-window
-     display-buffer-in-previous-window)))
+  '((
+     display-buffer-reuse-window ;; OK
+     display-buffer-reuse-mode-window ;; OK
+     ;; display-buffer-same-window ;; NOK
+     display-buffer-in-previous-window
+     )))
