@@ -150,6 +150,6 @@
   '((
      display-buffer-reuse-window ;; OK
      display-buffer-reuse-mode-window ;; OK
-     ;; display-buffer-same-window ;; NOK
+     ;; display-buffer-same-window ;; It breaks AUCTeX error reporting
      display-buffer-in-previous-window
      )))

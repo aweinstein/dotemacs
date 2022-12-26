@@ -14,6 +14,8 @@
   
   (setq TeX-auto-save t)
   (setq TeX-parse-self t)
+  (setq-default TeX-master nil)
+
   (setq reftex-ref-macro-prompt nil)
   
   ;; use evince for dvi and pdf viewer
