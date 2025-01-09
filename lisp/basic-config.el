@@ -12,9 +12,6 @@
 ;; kill the selected text just by hitting the Backspace key.
 (delete-selection-mode 1)
 
-;; Enable column numbering
-(column-number-mode 1)
-
 ;; Enable show parenthesis mode
 (show-paren-mode 1)
 
@@ -52,7 +49,7 @@
 (use-package flycheck
   :ensure t
   :init
-  (global-flycheck-mode t))
+  (add-hook 'python-mode-hook #'flycheck-mode))
 
 ;; snippets and snippet expansion
 (use-package yasnippet
@@ -73,7 +70,7 @@
   :ensure t
   )
 
-;;;;;;;;; Consel and swiper ;;;;;;;;;;;;;
+;;;;;;;;; Counsel and swiper ;;;;;;;;;;;;;
 (use-package counsel
   :ensure t
   :init
@@ -102,7 +99,22 @@
     (global-set-key (kbd "C-x l") 'counsel-locate)
     (global-set-key (kbd "C-S-o") 'counsel-rhythmbox)
     (define-key read-expression-map (kbd "C-r") 'counsel-expression-history)
+    (setq swiper-use-visual-line nil)
+    (setq swiper-use-visual-line-p (lambda (a) nil))
     ))
+
+;; From https://github.com/rememberYou/.emacs.d/blob/master/config.org#auto-completion
+(use-package company
+  :ensure t
+  :after lsp-mode
+  :hook (lsp-mode . company-mode)
+  :custom
+  (company-begin-commands '(self-insert-command))
+  (company-idle-delay 0.5)
+  (company-minimum-prefix-length 1)
+  (company-show-quick-access t)
+  (company-tooltip-align-annotations 't)
+)
 
 ;; Muestra el reloj en formato 24 hrs
 (setq display-time-24hr-format t) ; Muestra el reloj en formato 24 hrs
@@ -114,23 +126,30 @@
 (defalias 'list-buffers 'ibuffer)
 ;; (defalias 'list-buffers 'ibuffer-other-window)
 
-(use-package auto-complete
-  :ensure t
-  :init
-  (progn
-    (ac-config-default)
-    (global-auto-complete-mode t)
-    )
-  )
+;; UI improvements from  https://www.youtube.com/watch?v=IspAZtNTslY
+;; Show line numbers 
+(column-number-mode)
+(global-display-line-numbers-mode t)
+;; Disable line numbers for some modes
+(dolist (mode '(org-mode-hook
+		term-mode-hook
+		eshell-mode-hook
+		org-agenda-mode-hook
+		help-mode-hook
+		compilation-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
+(windmove-default-keybindings)
 
-;;;;; From old basic-config.el
+(winner-mode)
 
-;; (when (memq window-system '(x mac ns))
-;;   (exec-path-from-shell-initialize))
-
-;; ; Enable spell check on text mode
-;; (add-hook 'text-mode-hook 'flyspell-mode) ;turn on flyspell mode by default
-;; (add-hook 'text-mode-hook 'turn-on-flyspell)
-;; (add-hook 'text-mode-hook 'visual-line-mode)
-
+;; Prefer to reuse existing windows, especially those showing a buffer
+;; of the same mode
+;; From https://github.com/daviwil/emacs-from-scratch/blob/master/show-notes/Emacs-Tips-DisplayBuffer-1.org
+(setq display-buffer-base-action
+  '((
+     display-buffer-reuse-window ;; OK
+     display-buffer-reuse-mode-window ;; OK
+     ;; display-buffer-same-window ;; It breaks AUCTeX error reporting
+     display-buffer-in-previous-window
+     )))

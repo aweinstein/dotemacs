@@ -23,7 +23,6 @@
 ;; The remaining of the config is separeted in files
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (load-library "basic-config")
-
 (load-library "latex-config")
 (load-library "server-start-config")
 (load-library "tramp-config")
@@ -36,6 +35,6 @@
 (load-library "org-config")
 (load-library "lsp-config")
 (load-library "python-config")
-(load-library "keybindings") ; keept it at the end
 
 (message "* --[ Done with AJW Emacs init file ]--")
+
