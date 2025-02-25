@@ -98,3 +98,7 @@
 (add-hook 'org-shiftright-final-hook 'windmove-right)
 
 (setq org-src-fontify-natively t)
+
+;; Do not show deadlines and scheduled tasks if the TODO is done
+(setq org-agenda-skip-deadline-if-done t)
+(setq org-agenda-skip-scheduled-if-done t)
