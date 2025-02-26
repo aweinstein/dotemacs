@@ -8,3 +8,4 @@ ac-comphist.dat
 eshell/
 .lsp-session-v1
 .cache
+org-persist
