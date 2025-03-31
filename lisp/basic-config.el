@@ -153,3 +153,4 @@
      ;; display-buffer-same-window ;; It breaks AUCTeX error reporting
      display-buffer-in-previous-window
      )))
+
