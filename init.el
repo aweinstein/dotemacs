@@ -35,6 +35,7 @@
 (load-library "org-config")
 (load-library "lsp-config")
 (load-library "python-config")
+(load-library "c-config")
 
 (message "* --[ Done with AJW Emacs init file ]--")
 
