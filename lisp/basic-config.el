@@ -163,3 +163,8 @@
   :config
   (setq quickrun-focus-p nil)
 )
+
+;; Set UTF-8 as the prefered coding-system
+(prefer-coding-system 'utf-8)
+(set-language-environment "UTF-8")
+(setq default-buffer-file-coding-system 'utf-8)
