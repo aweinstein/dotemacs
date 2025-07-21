@@ -10,3 +10,4 @@ eshell/
 .cache
 org-persist
 eln-cache
+tramp
