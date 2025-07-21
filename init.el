@@ -19,12 +19,13 @@
 (package-install 'use-package))
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-
 ;; The remaining of the config is separeted in files
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (load-library "basic-config")
 (load-library "latex-config")
-(load-library "server-start-config")
+(when (not (eq system-type 'windows-nt))
+  ;; Your non-Windows-specific code here
+  (load-library "server-start-config"))
 (load-library "tramp-config")
 (load-library "color-theme-config")
 (load-library "dired-config")
@@ -35,6 +36,17 @@
 (load-library "org-config")
 (load-library "lsp-config")
 (load-library "python-config")
+
+(when (eq system-type 'windows-nt)
+  ;; Your Windows-specific code here
+  (load-library "windows")
+  (message "Running on Windows"))
+
+(defun my-c-mode-hook ()
+  (setq c-basic-offset 4)      ;; indentation width
+  (setq indent-tabs-mode nil)) ;; use spaces instead of tabs
+
+(add-hook 'c-mode-common-hook 'my-c-mode-hook)
 
 (message "* --[ Done with AJW Emacs init file ]--")
 
