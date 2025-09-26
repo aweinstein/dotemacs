@@ -161,8 +161,16 @@
               ("<f8>" . quickrun)
               ("<f7>" . quickrun-region))
   :config
-  (setq quickrun-focus-p nil)
-)
+  (setq quickrun-focus-p nil))
+
+;; Add -lm to the C quickrun command
+(quickrun-add-command "c/gcc"
+  '((:command . "gcc")
+    (:exec    . ("%c -Wall -lm %o -o %e %s" "%e %a"))
+    (:remove  . ("%e")))
+  :default "c"))
+
+
 
 ;; Set UTF-8 as the prefered coding-system
 (prefer-coding-system 'utf-8)
