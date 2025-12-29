@@ -4,9 +4,12 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Scrolling
+(pixel-scroll-precision-mode 1)
+(setq pixel-scroll-precision-interpolate-page t)
+(setq scroll-conservatively 101)
 (setq scroll-margin 0)
-(setq scroll-conservatively 100000)
-(setq scroll-preserve-screen-position 1)
+(setq scroll-step 1)
+(setq fast-but-imprecise-scrolling t)
 
 ;; Enable Delete Selection mode to replace a region just by typing text, and
 ;; kill the selected text just by hitting the Backspace key.
