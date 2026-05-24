@@ -68,10 +68,15 @@
   (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
   )
 
-;; Spaceline
-(use-package spaceline
+(use-package doom-modeline
   :ensure t
-  )
+  :hook (after-init . doom-modeline-mode)
+  :config
+  (setq doom-modeline-height 25)
+  (setq doom-modeline-icon nil)          ; set t if you have nerd-fonts installed
+  (setq doom-modeline-minor-modes nil)
+  (setq doom-modeline-lsp t)
+  (setq doom-modeline-check-simple-format t))
 
 ;;;;;;;;; Counsel and swiper ;;;;;;;;;;;;;
 (use-package counsel
