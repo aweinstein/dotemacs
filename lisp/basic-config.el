@@ -193,3 +193,9 @@
 ;; Material
 ;; Afternoon
 ;; Ver https://pawelbx.github.io/emacs-theme-gallery/ para mas opciones
+
+;; Autosave
+(setq auto-save-timeout 300        ; seconds of idle time before autosave
+      auto-save-interval 0)        ; disable keystroke-based autosave
+
+(auto-save-visited-mode 1)
