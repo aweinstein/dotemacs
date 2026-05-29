@@ -163,13 +163,13 @@
      )))
 
 ;; Quickrun
-(use-package quickrun
-  :ensure t
-  :bind (:map global-map
-              ("<f8>" . quickrun)
-              ("<f7>" . quickrun-region))
-  :config
-  (setq quickrun-focus-p nil))
+;; (use-package quickrun
+;;   :ensure t
+;;   :bind (:map global-map
+;;               ("<f8>" . quickrun)
+;;               ("<f7>" . quickrun-region))
+;;   :config
+;;   (setq quickrun-focus-p nil))
 
 ;; Add -lm to the C quickrun command
 (quickrun-add-command "c/gcc"

@@ -36,11 +36,28 @@
           (compile "make -k"))
       (compile (format "gcc -Wall -g -o %s %s" out buffer-file-name)))))
 
+(defun ajw/run-c ()
+  "Run the compiled binary for the current file, output in a new buffer."
+  (interactive)
+  (let* ((makefile-dir (locate-dominating-file default-directory "Makefile"))
+         (binary (if makefile-dir
+                     (expand-file-name
+                      (file-name-sans-extension (buffer-name))
+                      makefile-dir)
+                   (file-name-sans-extension buffer-file-name))))
+    (if (file-executable-p binary)
+        (with-current-buffer (get-buffer-create "*C Run Output*")
+          (erase-buffer)
+          (pop-to-buffer (current-buffer))
+          (call-process binary nil t t))
+      (message "Binary not found: %s — compile first with F5" binary))))
+
 (with-eval-after-load 'cc-mode
   (define-key c-mode-map   (kbd "<f5>") #'ajw/compile-c)
   (define-key c++-mode-map (kbd "<f5>") #'ajw/compile-c)
-  ;; Jump between errors
-  (global-set-key (kbd "<f6>") #'next-error)
+  (define-key c-mode-map   (kbd "<f7>") #'ajw/run-c)
+  (define-key c++-mode-map (kbd "<f7>") #'ajw/run-c)
+  (global-set-key (kbd "<f6>")   #'next-error)
   (global-set-key (kbd "<S-f6>") #'previous-error))
 
 ;;; Project tree
