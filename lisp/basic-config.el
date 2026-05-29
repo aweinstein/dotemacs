@@ -182,3 +182,14 @@
 (prefer-coding-system 'utf-8)
 (set-language-environment "UTF-8")
 (setq default-buffer-file-coding-system 'utf-8)
+
+;; Theme
+(use-package emacs
+  :ensure t
+  :config (load-theme 'ef-arbutus t))
+;; Otros temas para probar
+;; Moe
+;; Nimbus
+;; Material
+;; Afternoon
+;; Ver https://pawelbx.github.io/emacs-theme-gallery/ para mas opciones

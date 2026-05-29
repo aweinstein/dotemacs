@@ -27,7 +27,6 @@
   ;; Your non-Windows-specific code here
   (load-library "server-start-config"))
 (load-library "tramp-config")
-(load-library "color-theme-config")
 (load-library "dired-config")
 (load-library "shell-config")
 (load-library "eshell-config")
