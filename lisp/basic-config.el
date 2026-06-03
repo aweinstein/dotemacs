@@ -68,10 +68,15 @@
   (define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
   )
 
-;; Spaceline
-(use-package spaceline
+(use-package doom-modeline
   :ensure t
-  )
+  :hook (after-init . doom-modeline-mode)
+  :config
+  (setq doom-modeline-height 25)
+  (setq doom-modeline-icon nil)          ; set t if you have nerd-fonts installed
+  (setq doom-modeline-minor-modes nil)
+  (setq doom-modeline-lsp t)
+  (setq doom-modeline-check-simple-format t))
 
 ;;;;;;;;; Counsel and swiper ;;;;;;;;;;;;;
 (use-package counsel
@@ -130,7 +135,7 @@
 ;; (defalias 'list-buffers 'ibuffer-other-window)
 
 ;; UI improvements from  https://www.youtube.com/watch?v=IspAZtNTslY
-;; Show line numbers 
+;; Show line numbers
 (column-number-mode)
 (global-display-line-numbers-mode t)
 ;; Disable line numbers for some modes
@@ -158,13 +163,13 @@
      )))
 
 ;; Quickrun
-(use-package quickrun
-  :ensure t
-  :bind (:map global-map
-              ("<f8>" . quickrun)
-              ("<f7>" . quickrun-region))
-  :config
-  (setq quickrun-focus-p nil))
+;; (use-package quickrun
+;;   :ensure t
+;;   :bind (:map global-map
+;;               ("<f8>" . quickrun)
+;;               ("<f7>" . quickrun-region))
+;;   :config
+;;   (setq quickrun-focus-p nil))
 
 ;; Add -lm to the C quickrun command
 (quickrun-add-command "c/gcc"
@@ -177,3 +182,24 @@
 (prefer-coding-system 'utf-8)
 (set-language-environment "UTF-8")
 (setq default-buffer-file-coding-system 'utf-8)
+
+;; Theme
+(use-package emacs
+  :ensure t
+  :config (load-theme 'ef-arbutus t))
+;; Otros temas para probar
+;; Moe
+;; Nimbus
+;; Material
+;; Afternoon
+;; Ver https://pawelbx.github.io/emacs-theme-gallery/ para mas opciones
+
+;; Autosave
+(setq auto-save-timeout 300        ; seconds of idle time before autosave
+      auto-save-interval 0)        ; disable keystroke-based autosave
+
+(auto-save-visited-mode 1)
+
+;; Remove trailing white space
+(add-hook 'before-save-hook
+          'delete-trailing-whitespace)
