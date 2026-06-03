@@ -182,9 +182,10 @@
 (setq default-buffer-file-coding-system 'utf-8)
 
 ;; Theme
-(use-package emacs
+(use-package alect-themes
   :ensure t
-  :config (load-theme 'ef-arbutus t))
+  :demand t
+  :config (load-theme 'alect-black t))
 ;; Otros temas para probar
 ;; Moe
 ;; Nimbus
